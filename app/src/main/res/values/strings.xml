@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GetCab</string>
+    <string name="back_button" />
+    <string name="select_drop_location">Drop</string>
+    <string name="select_on_map">Select on map</string>
+    <string name="your_current_location">Your Current Location</string>
+    <string name="drop_location">Drop Location</string>
+    <string name="YOUR_GOOGLE_MAPS_API_KEY">AIzaSyDIumDqlDq4TAswKkz62q3rnPPEX7Qw3Dc</string>
+    <string name="next">enter</string>
+    <string name="location_not_found">Location not found</string>
+    <string name="unable_to_fetch_location">Unable to fetch location</string>
+    <string name="location_fetch_failed">Failed to fetch location</string>
+</resources>

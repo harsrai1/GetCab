@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+</selector>
+
+
+
+<!--    <?xml version="1.0" encoding="utf-8"?>-->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--<solid android:color="#F5F5F5" /> &lt;!&ndash; Light gray background &ndash;&gt;-->
+<!--<corners android:radius="8dp" /> &lt;!&ndash; Rounded corners &ndash;&gt;-->
+<!--<stroke-->
+<!--    android:width="1dp"-->
+<!--    android:color="#CCCCCC" /> &lt;!&ndash; Subtle border &ndash;&gt;-->
+<!--<padding-->
+<!--    android:left="8dp"-->
+<!--    android:top="8dp"-->
+<!--    android:right="8dp"-->
+<!--    android:bottom="8dp" /> &lt;!&ndash; Padding inside the EditText &ndash;&gt;-->
+<!--</shape>-->

@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "255619005309",
+    "firebase_url": "https://cabbooking-1fd3c-default-rtdb.firebaseio.com",
+    "project_id": "cabbooking-1fd3c",
+    "storage_bucket": "cabbooking-1fd3c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255619005309:android:44591bf29cbb598746ea14",
+        "android_client_info": {
+          "package_name": "com.example.cabdriver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSTWLDosjMbsBA1yWWccNmK5Bn5DQjcs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255619005309:android:0aa5d0e63b8387bd46ea14",
+        "android_client_info": {
+          "package_name": "com.example.getcab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSTWLDosjMbsBA1yWWccNmK5Bn5DQjcs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255619005309:android:afe4effd38ac3d1946ea14",
+        "android_client_info": {
+          "package_name": "com.example.sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSTWLDosjMbsBA1yWWccNmK5Bn5DQjcs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255619005309:android:05e428c46da465b446ea14",
+        "android_client_info": {
+          "package_name": "com.example.selectlocationcab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSTWLDosjMbsBA1yWWccNmK5Bn5DQjcs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255619005309:android:3514784a8502650c46ea14",
+        "android_client_info": {
+          "package_name": "com.example.wantcab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSTWLDosjMbsBA1yWWccNmK5Bn5DQjcs8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
