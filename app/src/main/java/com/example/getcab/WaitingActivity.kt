@@ -158,6 +158,7 @@ class WaitingActivity : AppCompatActivity() {
     private var currentLongitude: Double = 0.0
     private var dropLatitude: Double = 0.0
     private var dropLongitude: Double = 0.0
+    private var otp: String? = null
     private lateinit var rideRequestRef: DatabaseReference
     private val database: DatabaseReference = FirebaseDatabase.getInstance().reference.child("fetchingdriver")
     private val driversDatabase: DatabaseReference = FirebaseDatabase.getInstance().reference.child("drivers")
@@ -203,7 +204,8 @@ class WaitingActivity : AppCompatActivity() {
             "distance" to distance.toString(),
             "pickupAddress" to "Pickup Address",
             "dropAddress" to "Drop Address",
-            "status" to "pending"
+            "status" to "pending",
+            "otp" to otp
         )
 
         rideRequestRef.setValue(rideData)
@@ -217,9 +219,10 @@ class WaitingActivity : AppCompatActivity() {
                 val status = snapshot.child("status").getValue(String::class.java)
                 val driverName = snapshot.child("driverName").getValue(String::class.java)
                 val carNo = snapshot.child("carNo").getValue(String::class.java)
+                otp = snapshot.child("otp").getValue(String::class.java) ?: "0000"
 
-                if (status == "successful" && driverName != null && carNo != null) {
-                    fetchDriverDetails(driverName, carNo)
+                if (status == "accepted" && driverName != null && carNo != null) {
+                    fetchDriverDetails(driverName, carNo, otp!!)
                 }
             }
 
@@ -229,7 +232,7 @@ class WaitingActivity : AppCompatActivity() {
         })
     }
 
-    private fun fetchDriverDetails(driverName: String, carNo: String) {
+    private fun fetchDriverDetails(driverName: String, carNo: String, otp: String) {
         driversDatabase.addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 for (driverSnapshot in snapshot.children) {
@@ -252,6 +255,7 @@ class WaitingActivity : AppCompatActivity() {
                             putExtra("carNumber", carNo)
                             putExtra("phoneNumber", phoneNumber)
                             putExtra("driverImage", driverImage)
+                            putExtra("otp", otp)
                         }
                         startActivity(intent)
                         finish()
@@ -278,4 +282,3 @@ class WaitingActivity : AppCompatActivity() {
             }
     }
 }
-

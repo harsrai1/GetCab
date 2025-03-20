@@ -11,5 +11,5 @@ data class Driver(
     val status: String = "",
     val cabDriverName: String = "",
     val carNo: String = "",
-
+    val otp: String = ""
 )
