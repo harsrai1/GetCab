@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="myCab"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_italic"
+        android:text="Tap, Ride, and Go!"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!-- Enter Your Name -->
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tagline"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <!-- Gender Dropdown -->
+    <Spinner
+        android:id="@+id/gender_spinner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/name"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/editbox_background"
+        android:paddingLeft="10dp" />
+
+
+    <!-- Phone Number Input -->
+    <EditText
+        android:id="@+id/phone_number_input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/gender_spinner"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter Phone Number"
+        android:inputType="phone"
+        android:paddingLeft="15dp"
+        android:background="@android:drawable/editbox_background" />
+
+    <!-- Continue Button -->
+    <Button
+        android:id="@+id/continue_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/phone_number_input"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Continue"
+        android:textColor="@android:color/white"
+        android:background="@android:drawable/btn_default" />
+
+    <!-- Terms and Privacy Policy -->
+    <TextView
+        android:id="@+id/terms_and_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/continue_button"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="By continuing, you agree to our\nTerms of Use &amp; Privacy Policy"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textAlignment="center" />
+
+</RelativeLayout>

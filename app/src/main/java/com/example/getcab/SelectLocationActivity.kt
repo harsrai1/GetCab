@@ -28,7 +28,6 @@ class SelectLocationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_select_location)
-
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
         currentLocationInput = findViewById(R.id.current_location_input)
         dropLocationInput = findViewById(R.id.drop_location_input)
