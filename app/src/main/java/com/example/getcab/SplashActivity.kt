@@ -27,7 +27,7 @@ class SplashActivity : AppCompatActivity() {
 
         // Navigate to MainActivity after 3 seconds
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }, 300)
     }
