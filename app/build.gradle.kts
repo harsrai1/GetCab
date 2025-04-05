@@ -58,6 +58,10 @@ dependencies {
     implementation(libs.firebase.database.ktx)
     implementation(libs.firebase.database)
     implementation(libs.firebase.messaging)
+    implementation(libs.androidx.credentials)
+    implementation(libs.androidx.credentials.play.services.auth)
+    implementation(libs.googleid)
+    implementation(libs.firebase.firestore)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -66,6 +70,8 @@ dependencies {
     implementation("com.google.android.gms:play-services-maps:18.0.0")
     implementation("com.google.maps.android:android-maps-utils:2.2.4")
     implementation("com.squareup.picasso:picasso:2.71828")
+    implementation("com.google.firebase:firebase-auth:22.0.0")
+    implementation ("com.google.android.gms:play-services-auth:21.3.0")
 
     implementation("com.squareup.okhttp3:okhttp:4.9.2")
     implementation("com.google.code.gson:gson:2.8.8")
